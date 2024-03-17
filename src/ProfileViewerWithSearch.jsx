@@ -27,8 +27,9 @@ export default function ProfileViewerWithSearch() {
     return (
         <div>
         <ProfileSearchForm formObj={formDataObj} changeFormData={changeFormData} />
-        <div className="searchResultCard">
-            <h2>{formDataObj.userName}</h2>
+        <h2>{formDataObj.userName}</h2>
+        <div className="searchResultCard" style={{display: "flex", height: "100%", width: "100%"}}>
+            
             <img src={profile.data.avatar_url} alt="" style={{borderRadius: '50%'}}/>
         </div>
         </div>
